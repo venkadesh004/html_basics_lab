@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple static site</title>
+        <style>
+            .nav ul li a {
+                color: green;
+            }
+
+            .nav ul li a:hover {
+                color: red;
+            }
+
+            .nav ul li a:visited {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <!--Link tags in HTML-->
+            <ul>
+                <li><a href="https://www.tce.edu" target="_blank">Home</a></li>
+                <li><a href="https://www.google.com">About Us</a></li>
+                <li><a href="#bg-section">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <!--Image Tags in HTML-->
+            <img src="./tce.jpg" alt="TCE">
+        </div>
+        <div>
+            <!--Table in HTML-->
+            <table>
+                <tr>
+                    <th>Department</th>
+                    <th>Year of Establishment</th>
+                </tr>
+                <tr>
+                    <td>Computer Science Engineering</td>
+                    <td>1986</td>
+                </tr>
+                <tr>
+                    <td>Information Technology</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>Data Science</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Computer Science and Buisness Systems</td>
+                    <td>2019</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <!--Frame Tag in HTML-->
+            <h1>Intro Video</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UeNxQ0EvTss?si=E22K485GSAdrSzmO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div>
+            <!--List Tag in HTML-->
+            <h2>Our Courses</h2>
+            <ol>
+                <li>Python</li>
+                <li>DSA</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>DBMS</li>
+            </ol>
+        </div>
+        <div id="bg-section" style="width: 100%; background-image: url('./tce.jpg'); height: 500px; background-repeat: no-repeat; background-position: center; background-size: cover; color: white;">
+            <!--Background Image in HTML-->
+            <h1>Hello Everyone</h1>
+        </div>
+        <div>
+            <!--Image Map in HTML-->
+            <p>This is for Image Map Tag</p>
+            <img src="./chart.png" usemap="#image-map" alt="">
+            <map name="image-map">
+                <area target="_blank" alt="Red" title="Red" href="https://en.wikipedia.org/wiki/Red" coords="255,2,258,256,477,386,512,274,482,141,392,37" shape="poly">
+                <area target="_blank" alt="Yellow" title="Yellow" href="https://en.wikipedia.org/wiki/Yellow" coords="253,0,260,253,37,383,3,279,22,156,104,50" shape="poly">
+                <area target="_blank" alt="Blue" title="Blue" href="https://en.wikipedia.org/wiki/Blue" coords="261,257,39,383,90,447,229,507,360,485,416,457,477,388" shape="poly">
+            </map>
+        </div>
+        <div>
+            <!--Vide Tag in HTML-->
+            <p>Video Element in HTML</p>
+            <video controls>
+                <source src="./What is Computer Science.mp4">
+            </video>
+        </div>
+    </body>
+</html>
